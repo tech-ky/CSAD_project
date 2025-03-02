@@ -1,0 +1,44 @@
+body {
+            background-image: url('../HomePictures/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            
+        }
+
+        .container h1, .container h3 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Courier New', monospace;
+            font-size:1.5rem;
+        }
+
+        .loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            transform: translate(-50%, -50%);
+        }
+
+        .loader::after {
+            content: "";
+            width: 120px; /* Increased size */
+            height: 120px; /* Increased size */
+            border: 12px solid blue; /* Increased thickness */
+            border-top-color: black;
+            border-radius: 50%;
+            box-sizing: border-box;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }

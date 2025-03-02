@@ -1,0 +1,15 @@
+# Firebase service account key (should never be tracked)
+csadproject-bbab0-firebase-adminsdk-fbsvc-af5d3d3432.json
+
+# Ignore uploads folder (optional based on use case)
+uploads/
+
+# Ignore vendor directory (Composer dependencies)
+/vendor/
+
+# Ignore log files
+*.log
+
+# Ignore IDE/editor-specific files
+.idea/
+*.sublime-workspace

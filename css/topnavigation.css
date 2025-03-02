@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.top-nav h1 {
+    font-family: "Monsieur La Doulaise", serif;
+}
+
+.navbar { 
+    height: 100px;
+    width: 100%;
+    background: white;
+    font-family: calibri;
+}
+
+.top-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.top-nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.top-nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.top-nav a:hover {
+    color: #0056b3;
+}
+
+.top-nav button {
+    height: 50px;
+    margin-left: auto; 
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+}
+
+.top-nav button:hover {
+    background-color: #004CC5;
+}

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-image: url("../HomePictures/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Header Section */
+.OrderNow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background-color: rgba(128, 128, 128, 0);
+    gap: 40px;
+    text-align: center;
+}
+
+.OrderNow h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.OrderNow h2 {
+    font-size: 2em;
+    margin-right: 300px;
+    margin-left: 300px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.OrderNow button {
+    background-color: #007bff;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.OrderNow button:hover {
+    background-color: #004CC5;
+}
+
+.highlight {
+    color: cyan;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    font-size:2rem;
+}
+
+.SesonalPromotion {
+    padding: 40px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.SeasonalPromotion {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    max-width: fit-content;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-scroll img {
+    scroll-snap-align: start;
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.dot-container {
+    margin-top: 30px;
+}
+
+.dot-container a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.dot-container .active {
+    opacity: 1;
+}
+
+/* About Us Section */
+.AboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.AboutUs table {
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.AboutUs h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.AboutUs p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.AboutUs img {
+    width: 420px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AboutUs img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Footer Styling */
+footer {
+    background-color: white;
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+    min-width: 250px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .OrderNow {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .OrderNow h2 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .horizontal-scroll img {
+        height: 300px;
+        width: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}

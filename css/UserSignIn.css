@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+
+}
+
+body{
+    background-color: #c9d6ff;
+    background:linear-gradient(to right,#e2e2e2,lightblue);
+}
+.container{
+    background:#fff;
+    width:450px;
+    padding:1.5rem;
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    margin:0 2rem;
+    align-items: center; 
+}
+.form-title{
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.4rem;
+}
+.button-group{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+button{
+    height: 50px;
+    margin-left: auto; 
+    padding: 10px 20px; 
+    background-color: #007bff; /* blue */
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+}
+
+button:hover{
+    background:#ffffff;  /* blue */
+    color:blue;
+    border: blue; 
+}
+
+input{
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid black;
+    padding-left:1.5rem;
+    font-size:15px;
+}
+
+.input-group{
+    padding:5px;
+    position:relative;
+}
+
+.input-group i{
+    position:absolute;
+    color:black;
+}
+#error-message{
+    color: red;
+    text-align:center;
+    padding:10px;
+    font-size:1.5em;
+}
+
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid #88074e;
+}
+input::placeholder{
+    color:transparent;
+}
+
+label{
+    color:grey;
+    position:relative;
+    left:1.2em;
+    top:-1.3em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-3em;
+    color:#88074e;
+    font-size:15px;
+}
